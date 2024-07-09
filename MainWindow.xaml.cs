@@ -47,7 +47,12 @@ namespace To_Do_List_WPF
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (ToDoListBox.SelectedItem is ToDoItem selectedItem)
+            {
+                _context.ToDoItems.Remove(selectedItem);
+                _context.SaveChanges();
+                LoadTodoItems();
+            }
         }
     }
 }
