@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="468">
     <Grid>
-        <Button x:Name="DeleteButton" Content="Удалить" HorizontalAlignment="Left" Margin="228,66,0,0" VerticalAlignment="Top" Height="30" Width="85"/>
-        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="114,66,0,0" VerticalAlignment="Top" Height="30" Width="85"/>
+        <Button x:Name="DeleteButton" Content="Удалить" HorizontalAlignment="Left" Margin="228,66,0,0" VerticalAlignment="Top" Height="30" Width="85" Click="DeleteButton_Click"/>
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="114,66,0,0" VerticalAlignment="Top" Height="30" Width="85" Click="AddButton_Click"/>
         <ListBox x:Name="ToDoListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,107,10,10" FontSize="20"/>
         <TextBox x:Name="ToDoItemTextBox" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="448" Height="42" FontSize="20"/>
 
