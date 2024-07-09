@@ -126,3 +126,8 @@ C:\Users\misha\source\repos\Feraspar\To-Do-List-App\obj\Debug\net8.0-windows\ref
 C:\Users\misha\source\repos\Feraspar\To-Do-List-App\obj\Debug\net8.0-windows\To-Do-List-WPF.pdb
 C:\Users\misha\source\repos\Feraspar\To-Do-List-App\obj\Debug\net8.0-windows\To-Do-List-WPF.genruntimeconfig.cache
 C:\Users\misha\source\repos\Feraspar\To-Do-List-App\obj\Debug\net8.0-windows\ref\To-Do-List-WPF.dll
+C:\Users\misha\source\repos\Feraspar\To-Do-List-App\bin\Debug\net8.0-windows\ControlzEx.dll
+C:\Users\misha\source\repos\Feraspar\To-Do-List-App\bin\Debug\net8.0-windows\MahApps.Metro.dll
+C:\Users\misha\source\repos\Feraspar\To-Do-List-App\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\misha\source\repos\Feraspar\To-Do-List-App\bin\Debug\net8.0-windows\de\MahApps.Metro.resources.dll
+C:\Users\misha\source\repos\Feraspar\To-Do-List-App\obj\Debug\net8.0-windows\App.baml

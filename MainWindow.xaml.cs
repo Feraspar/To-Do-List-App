@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -23,35 +24,53 @@ namespace To_Do_List_WPF
         {
             InitializeComponent();
             _context = new ToDoContext();
+            _context.Database.Migrate();
             LoadTodoItems();
         }
 
         private void LoadTodoItems()
         {
             var Todos = _context.ToDoItems.ToList();
-            ToDoListBox.ItemsSource = Todos;
+            foreach (var todo in Todos)
+            {
+                ToDoListBox.Items.Add(todo);
+            }
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(ToDoItemTextBox.Text))
+            try
             {
-                var newTodoItem = new ToDoItem { Title = ToDoItemTextBox.Text, IsCompleted = false };
-                _context.ToDoItems.Add(newTodoItem);
-                _context.SaveChanges();
+                if (!string.IsNullOrEmpty(ToDoItemTextBox.Text))
+                {
+                    var newTodoItem = new ToDoItem { Title = ToDoItemTextBox.Text, IsCompleted = false };
+                    _context.ToDoItems.Add(newTodoItem);
+                    _context.SaveChanges();
 
-                LoadTodoItems();
-                ToDoItemTextBox.Clear();
+                    LoadTodoItems();
+                    ToDoItemTextBox.Clear();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
             }
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ToDoListBox.SelectedItem is ToDoItem selectedItem)
+            try
             {
-                _context.ToDoItems.Remove(selectedItem);
-                _context.SaveChanges();
-                LoadTodoItems();
+                if (ToDoListBox.SelectedItem is ToDoItem selectedItem)
+                {
+                    _context.ToDoItems.Remove(selectedItem);
+                    _context.SaveChanges();
+                    LoadTodoItems();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
             }
         }
     }
