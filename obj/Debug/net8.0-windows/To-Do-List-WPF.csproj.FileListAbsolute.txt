@@ -131,3 +131,4 @@ C:\Users\misha\source\repos\Feraspar\To-Do-List-App\bin\Debug\net8.0-windows\Mah
 C:\Users\misha\source\repos\Feraspar\To-Do-List-App\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
 C:\Users\misha\source\repos\Feraspar\To-Do-List-App\bin\Debug\net8.0-windows\de\MahApps.Metro.resources.dll
 C:\Users\misha\source\repos\Feraspar\To-Do-List-App\obj\Debug\net8.0-windows\App.baml
+C:\Users\misha\source\repos\Feraspar\To-Do-List-App\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

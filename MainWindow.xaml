@@ -1,16 +1,23 @@
-﻿<Window x:Class="To_Do_List_WPF.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:To_Do_List_WPF"
+        xmlns:Models="clr-namespace:To_Do_List_WPF.Models" x:Class="To_Do_List_WPF.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="468">
     <Grid>
         <Button x:Name="DeleteButton" Content="Удалить" HorizontalAlignment="Left" Margin="228,66,0,0" VerticalAlignment="Top" Height="30" Width="85" Click="DeleteButton_Click"/>
         <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="114,66,0,0" VerticalAlignment="Top" Height="30" Width="85" Click="AddButton_Click"/>
-        <ListBox x:Name="ToDoListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,107,10,10" FontSize="20"/>
+        <ListBox x:Name="ToDoListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,107,10,10" FontSize="20">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}" FontSize="20"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <TextBox x:Name="ToDoItemTextBox" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" Height="42" FontSize="20" metro:TextBoxHelper.Watermark="Введите задачу..." HorizontalAlignment="Center"/>
 
     </Grid>

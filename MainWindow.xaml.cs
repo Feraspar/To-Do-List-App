@@ -30,11 +30,8 @@ namespace To_Do_List_WPF
 
         private void LoadTodoItems()
         {
-            var Todos = _context.ToDoItems.ToList();
-            foreach (var todo in Todos)
-            {
-                ToDoListBox.Items.Add(todo);
-            }
+            var todos = _context.ToDoItems.ToList();
+            ToDoListBox.ItemsSource = todos;
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
@@ -50,6 +47,10 @@ namespace To_Do_List_WPF
                     LoadTodoItems();
                     ToDoItemTextBox.Clear();
                 }
+                else
+                {
+                    MessageBox.Show("Введите задачу.");
+                }
             }
             catch (Exception ex)
             {
@@ -61,9 +62,9 @@ namespace To_Do_List_WPF
         {
             try
             {
-                if (ToDoListBox.SelectedItem is ToDoItem selectedItem)
+                if (ToDoListBox.SelectedItem is ToDoItem item)
                 {
-                    _context.ToDoItems.Remove(selectedItem);
+                    _context.ToDoItems.Remove(item);
                     _context.SaveChanges();
                     LoadTodoItems();
                 }
