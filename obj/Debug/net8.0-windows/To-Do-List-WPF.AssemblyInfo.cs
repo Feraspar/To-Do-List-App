@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("To-Do-List-WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b316b7e22b41c97dde20f40c7ec63c8efcdebc7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13b4d7bbfc9a9313c91ed958e1b7f780318aeaa8")]
 [assembly: System.Reflection.AssemblyProductAttribute("To-Do-List-WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("To-Do-List-WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
