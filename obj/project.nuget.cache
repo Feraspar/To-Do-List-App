@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IS3/NpeC9DNTxBj4ejV9LdyB5k46LMrJDAPHtISA6dgIcutgFIhF5fVFPakp5UOjdG/csxhcDPTnV/FDX+yAbQ==",
+  "dgSpecHash": "mMn4kphG+fWBTwRG3iGx98rPUp4qa3pouZQdAsokUWnLp9JhCuR7HQjrE6QCzXbV8rZx8KP3S30V1Y0ZVMd7bA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\misha\\source\\repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj",
+  "projectFilePath": "C:\\Users\\misha\\Source\\Repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\misha\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
     "C:\\Users\\misha\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

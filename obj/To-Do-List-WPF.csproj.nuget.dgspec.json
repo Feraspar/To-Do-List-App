@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\misha\\source\\repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj": {}
+    "C:\\Users\\misha\\Source\\Repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\misha\\source\\repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj": {
+    "C:\\Users\\misha\\Source\\Repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\misha\\source\\repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj",
+        "projectUniqueName": "C:\\Users\\misha\\Source\\Repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj",
         "projectName": "To-Do-List-WPF",
-        "projectPath": "C:\\Users\\misha\\source\\repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj",
+        "projectPath": "C:\\Users\\misha\\Source\\Repos\\Feraspar\\To-Do-List-App\\To-Do-List-WPF.csproj",
         "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\misha\\source\\repos\\Feraspar\\To-Do-List-App\\obj\\",
+        "outputPath": "C:\\Users\\misha\\Source\\Repos\\Feraspar\\To-Do-List-App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\misha\\AppData\\Roaming\\NuGet\\NuGet.Config",
